@@ -5,7 +5,6 @@ Project is build on HTML, CSS , JS on Node JS
 npm install
 npm run start
 
-
 Go to localhost:3000
 
 #For Chat 
