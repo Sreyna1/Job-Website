@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SignIn</title>
+	<!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="fontawesome-free-5.3.1-web/fontawesome-free-5.3.1-web/css/all.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./signup/style.css">
+	
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+	
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCFW9avzV_qt3W2cARcLhMkdA5msELW2hk",
+    authDomain: "jobsearch-78f44.firebaseapp.com",
+    databaseURL: "https://jobsearch-78f44.firebaseio.com",
+    projectId: "jobsearch-78f44",
+    storageBucket: "jobsearch-78f44.appspot.com",
+    messagingSenderId: "920751215712"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body>
+<div class="container-fluid wall">
+		<div class="row top-menu">
+			<div class="col-1 div1">
+				<a href="/index.html"><img src="IP-logo@3x.png"></a>
+			</div>
+			<div class="col-9 nav_list" >
+				<ul>
+					<li>
+						<a href="joblist.html" >Job List</a>
+					</li>
+					<li>
+						<a href="jobcategory.html">Job Category</a>
+					</li>
+					<li>
+						<a href="companylist.html">Company List</a>
+					</li>
+					<li>
+						<a href="joblocation.html">Job Location</a>
+					</li>
+					<li>
+						<a href="aboutUs.html" >About US</a>
+					</li>
+					<li>
+						<a href="contactUs.html" >Contact US</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="col-2 btn1">
+				<a href="file HTML/ signin.html" class="btn btn-success">Sign In</a>
+			</div>
+		</div>
+	</div>
+	<div style="height:150px"></div>
+	
+	
+	<!-- login form -->
+	<div class="form">
+		<form action="/sign_in" method="POST">
+      <i class="fa fa-user-circle"></i>
+      <div class="form-group">
+          <div class="email">
+           <input id="Email" type="text" class="form-control" id="email" name="email" placeholder="Email">
+       
+    
+            <i class="fa fa-envelope"></i>
+          </div> 
+         </div>
+    <div class="form-group">
+         <div class="password">
+            <input id="Password" type="text" class="form-control" id="password" name="password" placeholder="Password">
+            <i class="fa fa-unlock-alt"></i>
+      </div>
+	<a href="../Find-Job-Website/assets/html/Verify password.html"> </div><p style="font-size: 30%" >Forgot password?</p></a>
+	 
+    <div class="form-group">
+      <!--<button class="btn btn-success" id="login" href="profile.html">Login</button> -->
+	   <!--<a class="btn btn-success " href="signup.html">SignUp</a> -->
+	  <a class="btn btn-success" href="./Find-Job-Website/Index.html">Login</a> 
+       <!--<button class="btn btn-success" id="sign_up">Sign up</button> -->
+	  <a class="btn btn-success " href="./signup/signup.html">SignUp</a>
+    </div>
+   </div>
+
+
+		
+<!-- end login form -->
+
+	<!--	responesive nav-->
+	<div class="container-fluid new_nav">
+		<i class="fa fa-bars text-light float-left" id="bar"></i>
+		<a class="btn btn-success float-left ml-3 text-light" href="file HTML/ signin.html">SignIn</a>
+		<div class="img">
+			<a href="file HTML/ index.html" ><img src="logo.png"></a>
+		</div>
+		<div class="sub_nav">
+			<ul>
+				<li>
+					<a href="file HTML/ joblist.html" >Job List</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="file HTML/ jobcategory.html">Job Category</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="file HTML/ companylist.html">Company List</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="file HTML/ joblocation.html">Job Location</a>
+				</li>
+				<li>
+					<a href="aboutUs.html" >About US</a>
+				</li>
+				<li>
+					<a href="contactUs.html" >Contact US</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="file js/signin.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#bar').click(function(){
+	//			var sub_nav=$('.sub_nav');
+				$('.sub_nav').toggle();
+	//			alert();
+			});
+		});
+		
+	</script>
+
+</body>
+</html>
+

@@ -1,0 +1,240 @@
+<!doctype html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="fontawesome-free-5.3.1-web/fontawesome-free-5.3.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+    <link rel="stylesheet" href="./signup/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+<body> 	
+	
+	<div class="first-sec">
+		<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> -->
+				<div class="container-fluid wall">
+						<div class="row top-menu">
+							<div class="col-1 div1">
+								<a href="index.html"><img src="IP-logo@3x.png"></a>
+							</div>
+							<div class="col-9 nav_list" >
+								<ul>
+									<li>
+										<a href="joblist.html" >Job List</a>
+									</li>
+									<li>
+										<a href="jobcategory.html" >Job Category</a>
+									</li>
+									<li>
+										<a href="companylist.html">Company List</a>
+									</li>
+									<li>
+										<a href="joblocation.html " class="text-warning">Job Location</a>
+									</li>
+									<li>
+										<a href="aboutUs.html" >About US</a>
+									</li>
+									<li>
+										<a href="contactUs.html" >Contact US</a>
+									</li>
+				
+								</ul>
+							</div>
+							<div class="col-2 btn1">
+								<a class="btn btn-success text-light" href="signin.html">Sign In</a>
+							</div>
+						</div>
+					</div></div>
+
+	   <!-- </nav> -->
+	   <div class="container-fluid new_nav">
+			<i class="fa fa-bars text-light float-left" id="bar"></i>
+			<a class="btn btn-success float-left ml-3 text-light" href="signin.html">SignIn</a>
+			<div class="img">
+				<a href="index.html" ><img src="IP-logo@3x.png"></a>
+			</div>
+			<div class="sub_nav">
+				<ul>
+					<li>
+						<a href="joblist.html" >Job List</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="jobcategory.html">Job Category</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="companylist.html">Company List</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="joblocation.html">Job Location</a>
+					</li>
+					<li>
+						<a href="aboutUs.html" >About US</a>
+					</li>
+					<li>
+						<a href="contactUs.html" >Contact US</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end nav -->
+
+	<!-- first-section -->
+	 <div class="site-blocks-cover overlay" style="background-image: url('work5.jpg') ;" data-aos="fade" data-stellar-background-ratio="0.5">
+	      <div class="container">
+	          <div class="row align-items-center">
+	              <div class="col-12" data-aos="fade">
+    
+	                  <div style="text-align: center; margin-top: 0px">
+		                      <h1 class="text-light"> <span class="h1 text-monospace"><strong>Find an awesome Job!</strong></span></h1>
+		                       <h5 style="color: green">Our website provides you the information about the job offers.</h5>
+							   <div class="row" style="margin: 20px">
+							   
+		                                    
+								<div class="col-3">
+									<input class="form-control" type="search" placeholder="Input the major name" aria-label="Search">
+								</div>
+		                                                   <div class="col-3">
+			                                                     <select name="catagories" class="form-control">
+				                                                        <option value="Choose the major">Choose the major</option>
+		 		                                                              <option value="Doctor">Doctor</option>
+																			   <option value="Management">Management</option>
+																			   <option value="Seller">Seller</option>
+																			   <option value="Security">Security</option>
+																			   </select></div>
+																			   <div class="col-3">
+																   <select name="catagories" class="form-control">
+				                                                        <option value="Location">Location</option>
+		 		                                                              <option value="it">Phnom Penh</option>
+																			   <option value="it">Kompong Cham</option>
+																			   <option value="it">Sieam Reap</option>
+																			   <option value="it">Kompong Som</option>
+																			   <option value="it">Mondolkiri</option>
+																   </select></div>
+																  
+		     
+		                                                                <div class="col-1">
+																				<button class="btn btn-success" type="submit"> <a class="" href="./signup/signup.html"><span style="color: aliceblue;">Search</span></a></button></div>
+	                                 </div> 
+	                                                                                                
+		                                                                                   
+		                 </div>                                                       
+		                                                                                      
+					</div>	
+								
+	            </div>
+             </div>
+		</div>
+			<!-- end first section -->
+
+
+			<!-- second section -->
+	   <div class="text-info1">
+	  <h3 class="text-info2" style="text-align: center;margin: 50px">Popular Catagories</h3>
+	 <div class="row">
+		<div class="col-xl-2"></div>
+		<div class="col-xl-2 col-6" data-aos="fade-up" data-aos-delay="100">
+			<a href="Engineer.html" class="btn btn-success btn2"><span><img src="engineer1.png" class="img3"></span><br><br> Engineering</a>
+		</div>
+		<div class="col-xl-2 col-6" data-aos="fade-up" data-aos-delay="200">
+			<a href="Management.html" class="btn btn-success btn2"><span><img src="mag1.jpg" class="img3"></span><br><br> Management</a>
+		</div>
+		<div class="col-xl-2 col-6" data-aos="fade-up" data-aos-delay="300">
+			<a href="Information_Technology.html" class="btn btn-success btn2"><span><img src="it.png" class="img3"></span><br><br> Information Technology</a>
+		</div>
+		<div class="col-xl-2 col-6" data-aos="fade-up" data-aos-delay="500">
+			<a href="Designer.html" class="btn btn-success btn2"><span><img src="designer.png" class="img3"></span><br><br> Designer</a>
+		</div>
+
+		</div>
+	 </div>
+	 
+	 <div style="height: 450px;"></div>
+
+
+	 <!-- Footer -->
+	 <footer class="text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3">
+                    <h5>About</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <p class="mb-0">
+                        Job Website makes navigating your career easy. It is home to experts who provide clear, practical advice on job searching, resume writing, salary negotiations, and other career planning topics. 
+                    </p>
+                </div>
+    
+    
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h5>Contact</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <ul class="list-unstyled">
+						
+                        <li><i class="fa fa-envelope mr-2"></i> jobwebsite@gmail.com</li>
+                        <li><i class="fa fa-phone mr-2"></i> 0965555288</li>
+                        
+                    </ul>
+                </div>
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                    <h5>Address</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                    <ul class="list-unstyled">
+						<li><i class="fa fa-home mr-2"></i>#99 St.313,</li>
+                        <li><i class="fa fa-envelope mr-2"></i>Sangkat Boeung Kak II, Khan Toul Kok, 12152,  Phnom Penh, Cambodia</li>
+
+                    </ul>
+                </div>
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                    <h5>Subscribe Us</h5>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                   
+						<input class="form-control" type="search" placeholder="Your Email" aria-label="Search">
+						<div class="social-media">
+							<a href="#" class="fab fa-facebook"></a>
+							<a href="#" class="fab fa-youtube"></a>
+							<a href="#" class="fab fa-twitter"></a>
+							<a href="#" class="fab fa-instagram"></a>
+							<a href="#" class="fab fa-whatsapp"></a>
+					
+						</div>
+                    </ul>
+                </div>
+                <div class="col-12 copyright mt-3">
+                    <p class="float-left" >
+                        <a href="./aboutUs.html">Read More</a>
+                    </p>
+                    <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by TRY Sreyna</p>
+                </div>
+            </div>
+        </div>
+		
+		
+    </footer>
+	
+	 <script>
+		$(document).ready(function(){
+			$('#bar').click(function(){
+	 //			var sub_nav=$('.sub_nav');
+				$('.sub_nav').toggle();
+	 //			alert();
+			});
+		});
+		
+	 </script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 <script>
+	  AOS.init();
+	</script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	
+	background-color: white;;
+	
+}
+.wall
+{
+	overflow: hidden;
+	background-color: white;
+}
+.div1
+{
+	text-align: center;
+	padding: 5px;
+	margin: 40px auto 0;
+}
+.div1 img 
+{
+	width: 60px;
+	height: 60px;
+	
+}
+
+.nav_list ul 
+{
+	list-style-type: none;
+}
+.nav_list ul li
+{
+	float: left;
+}
+.nav_list ul li a
+{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: green;
+	padding: 20px;
+	
+}
+.nav_list ul li a:hover{
+	color:rgb(20, 20, 16);
+
+	
+}
+
+/*new nav bar for responsive*/
+.new_nav
+{
+	background-color: green;
+	height: 70px;
+	padding: 10px;
+	position: relative;
+}
+.new_nav .img
+{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	
+
+}
+.new_nav i
+{
+	cursor: pointer;
+	font-size: 30px;
+}
+.new_nav .img img
+{
+	width: 50px;
+	height: 50px;
+
+}
+/*responsive navigation */
+.sub_nav
+{
+	background-color:  green;
+	float: left;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.sub_nav ul
+{
+	list-style-type:  none;
+	padding: 0px;
+	margin: 0;
+	
+}
+.sub_nav ul li
+{
+	float: left;
+	width: 200px;
+	
+}
+.sub_nav ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 15px 20px;
+	
+}
+.sub_nav ul li:hover{
+	background-color: rgb(14, 14, 13);
+}
+.btn1{
+	padding: 20px;
+}
+
+.nav_bg{
+	background-color: rgb(41, 45, 48);
+
+}
+.inp1{
+	background-color: rgb(24, 179, 71);
+}
+.div2{
+	margin: 10px;
+	background-color: white;
+}
+.div2 img{
+	width: 70px;
+	height: 60px;
+	padding: 10px;
+	margin-bottom: -85px;
+	background-color: rgb(14, 177, 35);
+	
+}
+.div3{
+	margin: 30px;
+}
+.div4{
+	margin-top: 6%;
+	text-align: center;
+}
+span{
+	color: gray;
+	font-size: 15px;
+}
+
+/*signin style*/
+
+.form
+{   
+	
+	width: 25%;
+	height: 400px;
+	border-radius: 3%;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+	padding: 3%;
+	text-align: center;
+	font-size: 60px;
+}
+.email{
+	position: relative;
+}
+.email input{
+	padding-left: 40px;
+}
+.email i{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	top: 10px;
+}
+.password{
+	position: relative;
+}
+.password input{
+	padding-left: 40px;
+}
+.password i{
+	position: absolute;
+	font-size: 20px;
+	left: 10px;
+	top: 10px;
+}
+.form button
+{
+	margin: 5px;
+	
+}
+.btn2{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	background-color: gray;
+	margin: 20px;
+}
+.img3{
+	width: 70px;
+	height: 70px;
+	margin-top: 30px;
+}
+/*job catagery*/
+.job_ca table tr:hover{
+	background-color: green;
+	
+}
+
+.job_ca table tr td:hover{
+	background-color: green;
+
+
+	
+/*	background-color: blue;*/
+}
+
+/*responsive*/
+@media (min-width: 1200px) {
+	.new_nav{
+		display: none;
+	}
+	
+}
+@media (max-width: 1199.98px) {
+	.top-menu{
+		display: none;
+	}
+	.new_nav{
+		display: block;
+	}
+	.btn1{
+/*		float: left;*/
+		float: none;
+	}
+	.div1{
+		margin: auto;
+/*		display: none;*/
+	}
+	
+}
+.text-inhfo1{
+position:absolute;
+	top:1500px;
+
+}
+.container-fluid {
+	position: fixed;
+	top:0;
+	z-index:1;
+}
+site-blocks-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center; }
+	.site-blocks-cover.overlay {
+	  position: relative; }
+	  .site-blocks-cover.overlay:before {
+		position: absolute;
+		content: "";
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		background: rgba(0, 0, 0, 0.4); }
+	.site-blocks-cover, .site-blocks-cover > .container > .row {
+	  min-height: 600px;
+	  height: calc(100vh); }
+	.site-blocks-cover.inner-page, .site-blocks-cover.inner-page > .container > .row {
+	  min-height: 400px;
+	  height: calc(30vh); }
+	.site-blocks-cover .sub-text {
+	  font-size: 1.1rem;
+	  text-transform: uppercase;
+	  color: white;
+	  letter-spacing: .2em; }
+	.site-blocks-cover h1 {
+	  font-weight: 700;
+	  color: white;
+	  font-size: 2rem; }
+	  .site-blocks-cover h1 strong {
+		font-weight: 900; }
+	  @media (min-width: 768px) {
+		.site-blocks-cover h1 {
+		  font-size: 4rem;
+		  font-weight: 300;
+		  line-height: 1.2; } }
+	.site-blocks-cover p {
+	  color:white;
+	  line-height: 1.5; }
+	  .site-blocks-cover p a {
+		color: white; }
+		.site-blocks-cover p a.category {
+		  padding: 2px 10px;
+		  border-radius: 4px;
+		  border: 1px solid rgba(255, 255, 255, 0.2);
+		  display: inline-block;
+		  background: rgba(255, 255, 255, 0.1); }
+		  .site-blocks-cover p a.category:hover {
+			background: rgba(255, 255, 255, 0.2); }
+	.site-blocks-cover .intro-text {
+	  font-size: 16px;
+	  line-height: 1.5; }
+    
+	/* Sign Up */
+	.sign-up-form
+	{
+		width: 300px;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+		background-color:white;
+		padding: 10px;
+		margin: auto;
+		text-align:center;
+		
+}
+.input-box{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	border: 1px solid #999;
+	outline: none;
+	text-align: center;
+	border:1px solid rgb(133, 216, 175);
+}
+
+.button{
+    color: white;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+}
+.signup-btn{
+	background-color: rgb(9, 128, 48);
+	color: white;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+}
+.facebook-btn{
+	background-color: blue;
+	color: white;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.sign-up-form p{
+  font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+	text-decoration: none;
+}
+hr{
+	margin-top: 20px;
+	width: 80%;
+}
+
+.or{
+	background-color: white;
+	width: 30px;
+	margin: -30px auto 10px;
+}
+
+img{
+	width: 70px;
+	margin-top: -50px;
+}
+.text-info{
+	background-color: rgb(248, 242, 242);
+}
+.text-primary{
+	color: green;
+}
+.text-info2{
+	background-color: rgb(248, 242, 242);
+}
+
+/*Contact US*/
+.bloc_left_price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+.category_block li:hover {
+    background-color: #7adda7;
+}
+.category_block li:hover a {
+    color: #ffffff;
+}
+.category_block li a {
+    color: #343a40;
+}
+.add_to_cart_block .price {
+    color: #c01508;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.add_to_cart_block .price_discounted {
+    color: #343a40;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 140%;
+}
+.product_rassurance {
+    padding: 10px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.product_rassurance .list-inline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+    color: #343a40;
+}
+.reviews_product .fa-star {
+    color: gold;
+}
+.pagination {
+    margin-top: 20px;
+}
+footer {
+    background: #343a40;
+    padding: 100px;
+	margin-top: -400px;
+}
+footer a {
+    color: #f8f9fa!important
+}
+.text-light1{
+	margin-top: 100px;
+	background: #eef0f3;
+	
+
+}
+.fab {
+background-color: #131516;
+	
+}
+
+
+.aboutus-section {
+    padding: 90px 0;
+	margin-top: 50px;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #1dc28b none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: green;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid green;
+    border-radius: 25px;
+    color: green;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: green none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color : green;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid green;
+    border-radius: 100px;
+    color: green;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+/*contact US*/
+
+.contact {
+    padding-bottom: 100px;
+	margin-top: 100px;
+}
+.contact .heading {
+    margin-bottom: 50px;
+}
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #404356;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.contact .heading h2 span {
+    color: #7035cf;
+    font-weight: 300;
+}
+.contact .heading p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #525f7f;
+    line-height: 26px;
+    margin: 0;
+}
+.contact .main {
+    background: #ffffff;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,0.08);
+}
+.contact .main h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4a545e;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f8f8f9;
+    border: 0;
+    border-radius: 5px;
+}
+.contact button.btn {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background: linear-gradient(to right, rgb(96, 206, 182) 0%, green 100%);
+    color: #ffffff;
+}
+
+.contact .main .left {
+    padding: 40px 60px;
+}
+.contact .main .right {
+    background:#9de9cc;
+    background-size: cover;
+    padding: 40px;
+    color: #ffffff;
+    height: 100%;
+}
+.contact .main .right h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contact .main .right .info {
+    margin-bottom: 35px;
+}
+.contact .main .right .info i {
+    font-size: 25px;
+    color: #ffffff;
+}
+.contact .main .right .info span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 15px;
+}
+.contact .main .right .social a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 20px;
+}

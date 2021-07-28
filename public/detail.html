@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job List</title>
+	<!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome-free-5.3.1-web/fontawesome-free-5.3.1-web/css/all.min.css">
+	<link rel="stylesheet" href="/signup/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="fontawesome-free-5.3.1-web/fontawesome-free-5.3.1-web/css/all.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/signup/style.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+</head>
+
+<body>
+		<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> -->
+	<div class="container-fluid wall">
+		<div class="row top-menu">
+			<div class="col-1 div1">
+				<a href="index.html"><img src="IP-logo@3x.png"></a>
+			</div>
+			<div class="col-9 nav_list" >
+				<ul>
+					<li>
+						<a href="joblist.html" class="text-warning">Job List</a>
+					</li>
+					<li>
+						<a href="jobcategory.html">Job Category</a>
+					</li>
+					<li>
+						<a href="companylist.html">Company List</a>
+					</li>
+					<li>
+						<a href="joblocation.html">Job Location</a>
+					</li>
+					<li>
+						<a href="aboutUs.html" >About US</a>
+					</li>
+					<li>
+						<a href="contactUs.html" >Contact US</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-2 btn1">
+				<a class="btn btn-success text-light" href="signin.html">SignIn</a>
+			</div>
+		</div>
+	</div>
+	<!--	responesive nav-->
+	<div class="container-fluid new_nav">
+			<i class="fa fa-bars text-light float-left" id="bar"></i>
+			<a class="btn btn-success float-left ml-3 text-light" href="signin.html">Sign In</a>
+			<div class="img">
+				<a href="index.html" ><img src="IP-logo@3x.png"></a>
+			</div>
+			<div class="sub_nav">
+				<ul>
+					<li>
+						<a href="joblist.html" class="text-warning">Job List</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="jobcategory.html">Job Category</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="companylist.html">Company List</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="joblocation.html">Job Location</a>
+					</li>
+					<li>
+						<a href="aboutUs.html" >About US</a>
+					</li>
+					<li>
+						<a href="contactUs.html" >Contact US</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+        <div class="div4">
+            <h2>Please read carefully about the job detail <span class="text-info h1">!</span></h2>
+        </div>
+        <div class="p-3 m-3 bg-success text-white h4">Company description</div>
+
+<script src="file js/joblist.js"></script>
+   <script>
+		$(document).ready(function(){
+			$('#bar').click(function(){
+	//			var sub_nav=$('.sub_nav');
+				$('.sub_nav').toggle();
+	//			alert();
+			});
+		});
+		
+	</script>
+</body>
+</html>
